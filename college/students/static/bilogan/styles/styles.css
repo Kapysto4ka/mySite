@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	width: 100%;
+	
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+.header-block {
+	height: 100%;
+	position: relative;
+	background: url('../images/main-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.header-block header {
+	position: relative;
+	z-index: 10;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(198, 108, 73, 0.30);
+}
+.main-menu{
+	font-size: 1.5rem;
+	position: absolute; left:50px;
+}
+header .content-wrap .logo {
+	order: 2;
+}
+
+.icons {
+	color: #fff;
+}
+
+.logo {
+	font-size: 2.3rem;
+
+}
+
+.menu-list {
+	position: absolute;
+	background: #fff;
+}
+
+.menu-list li:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.menu-list a {
+	color: white;
+	font-size: 2rem;
+	text-decoration: none;
+}
+
+/*Global styles*/
+.content-wrap {
+	padding-top: 50px;
+	max-width: 1100px;
+	margin: 0 auto;
+	color:white;
+}
+
+.d-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hide {
+	display: none;
+}
+
+.content-height{
+	height: 450px;
+}
+
+.hide-menu {
+	position: absolute;
+	left: -9999px;
+	background:red;
+}
+
+.header-text{
+	padding-top: 70px;
+	position: relative;
+	color: white;
+	font-size: 2rem;
+	text-align: center;
+	padding-bottom: 90px;
+}
+
+#mainMenu{
+	text-align: center;
+	border-radius: 10px;
+	border: 2px solid #F5D6AB;
+	background: transparent;
+}
+
+#greeting{
+	padding: 0 30px 10px;
+	font-family: Libre Franklin;
+}
+#desc{
+	font-size: 1.5rem;
+	padding-top: 10px;
+	font-family: Libre Franklin;
+}
+#l_work{
+	font-size: 1.4rem;
+	padding-top: 50px;
+	font-family: Libre Franklin;
+}
+
+.about{
+	color: black;
+}
+
+.about div:first-of-type{
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 30px;
+}
+#a_text{
+	padding: 0 40px;
+	margin-bottom: 40px;
+}
+.skills{
+	background-color: #FFFAF2;
+	color:black;
+}
+
+.skills #text{
+	color: black;
+	font-size: 2rem;
+	padding-top: 40px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.skills img{
+	display: block;
+  	margin: 0 auto;
+	width: 80%;
+}
+.progress-information{
+	color: black;
+	margin-top: 40px;
+	padding-bottom: 20px;
+}
+
+.inf{
+	width: 100%;
+	display:flex;
+	margin-bottom: 30px;
+}
+.block_1{
+	width: 170px;
+	float: left;
+	margin-right: 10px;
+	margin-left: 40px;
+}
+.block_2{
+	width: 100%;
+	float: left;
+}
+
+.progress_bar{
+	width: 100%;
+}
+.portfolio{
+	display: block;
+	color: black;
+	background: white;
+}
+#p_header{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 1.5rem;
+	text-align: center;
+
+}
+
+#p_name{
+	padding-bottom: 30px;
+	text-align: center;
+	font-size: 1rem;
+}
+
+#task {
+	margin-bottom: 20px;
+	font-size: 1.5rem;
+}
+#task a{
+	color: black;
+	text-decoration: none;
+}
+#p_text{
+	text-align: center;
+	margin: 0 40px;
+	padding-bottom: 30px;
+}
+.img{
+	padding-left: 20px;
+}
+
+#img1{
+	width: 169.764px;
+	height: 69.846px;
+	float: left;
+	margin: 10px;
+}
+#img2{
+	width: 176.069px;
+	height: 116.894px;
+	float: left;
+	margin-top: 10px;
+}
+#img3{
+	width: 169.764px;
+	height: 180.279px;
+	float: left;
+	padding-left: 10px;
+
+}
+#img4{
+	width: 176.069px;
+	height: 73.846px;
+	float: left;
+	margin: 10px;
+	padding-left: 10px;
+}
+
+.get_in_Touch{
+	background-color: #FFFAF2;
+	color:black;
+	height: 400px;
+}
+
+
+#g_text{
+	color: black;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.src{
+	color: black;
+	padding-top: 30px;
+	font-family: Libre Franklin;
+	font-size: 18px;
+}
+
+table {
+  text-align: center;
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+}
+
+th, td {
+  border: none;
+  padding: 8px;
+  text-align: left;
+}
+
+#information{
+	padding: 30px 0 0 40px;
+	float: left;
+}
+
+#up{
+	font-size: 2rem;
+	display: flex;
+	float: right;
+	margin: 40px 40px 0 0;
+}
+
+@media screen and (min-width: 800px) {
+	header .content-wrap .logo {
+		order: 0;
+	}
+	.icons {
+		display: none;
+		padding: 10px;
+		cursor: pointer;
+	}
+
+	#mainMenu{
+	border: none;
+}
+
+
+	.main-menu {
+    	justify-content: right;
+    	opacity: 1;
+    	width: 90%;
+  	}
+	.hide-menu {
+		position: static;
+		float: right;
+	}
+	.menu-list {
+    	padding-top: 2.2rem;
+    	background: transparent;
+    	opacity: 1;
+    	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+	}
+	.menu-list li {
+		display: inline-block;
+		padding-right: 2rem;
+	}
+
+	.menu-list a {
+		font-size: 1rem;
+		color: #fff;
+	}
+
+
+	.header-block{
+		height: 700px;
+	}
+
+    .content-wrap {
+        justify-content: space-between;
+    }
+
+
+	.logo {
+        float: left;
+    }
+
+
+
+	#greeting{
+		font-family: Libre Franklin;
+		font-size: 60px;
+		font-style: normal;
+		font-weight: 400;
+		padding: 30px 0 0 0;
+	}
+
+	#desc{
+		padding: 30px 0;
+	}
+
+	#l_work{
+		padding-top: 70px;
+		font-family: Libre Franklin;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	.header-text{
+		text-align: left;
+	}
+
+	.about div:first-of-type{
+		font-family: Libre Franklin;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		text-align: left;
+	}
+	.about{
+		display: block;
+	}
+
+	#a_text{
+		text-align: justify;
+		font-family: Libre Franklin;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 30px;
+		margin-top: 60px;
+		padding: 0 0 100px 0;
+	}
+	.skills #text{
+	font-size: 2rem;
+	padding-top: 40px;
+	margin-bottom: 30px;
+	text-align: left;
+	}
+	.skills{
+		padding-bottom: 70px;
+	}
+
+	.progress-information{
+		margin: 0;
+		padding: 0;
+		display: flex;
+	}
+	.skills img{
+		float: left;
+		width: 330px;
+		height: 330px;
+		display: flex;
+		margin: 0 80px 0 0;
+	}
+	.inf{
+		font-size: 1rem;
+	}
+	svg{
+		width: 400px;
+    	height: auto;
+	}
+	.inf{
+		font-size: 25px;
+	}
+	.block_1{
+		margin-right: 70px;
+	}
+
+	#p_header{
+		font-size: 2rem;
+		display: table;
+		text-align: left;
+		top: 40px;
+	}
+
+	#p_name{
+		font-size: 1.7rem;
+		text-align: left;
+		padding-top: 30px;
+	}
+	#p_text{
+		font-size: 18px;
+		padding: 0;
+		margin: 0;
+		text-align: justify;
+		width: 30%;
+		float:left;
+	}
+	.img{
+		display: flex;
+		float: right;
+	}
+
+	.portfolio{
+		padding-bottom: 60px;
+	}
+
+	#img1{
+		width: 350px;
+		height: 144px;
+	}
+
+	#img2{
+		padding-left: 30px;
+		width: 363px;
+		height: 241px;
+	}
+
+	#img3{
+		width: 350px;
+		height: 349px;
+	}
+
+	#img4{
+		padding-left: 30px;
+		width: 363px;
+		height: 310px;
+	}
+
+
+	#g_text{
+		text-align: left;
+	}
+
+	.src a{
+		text-decoration: none;
+		color:black;
+	}
+	.src a:hover{
+		color:black;
+	}
+}

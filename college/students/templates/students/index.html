@@ -1,0 +1,225 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="{% static 'bilogan/styles/styles.css' %}">
+	
+</head>
+<body>
+
+	<img src="" alt="">
+
+	<div class="header-block" id="head">
+		<div class="overlay"></div>
+		<header>
+			<div class="content-wrap d-flex">
+				<div class="logo">
+					<b>Portofolio</b>
+				</div>
+				<nav class='main-menu'>
+					<div id='iconWrap' class="icons">
+						<i id='iconOpen' class="fa-solid fa-bars"></i>
+						<i id='iconClose' class="fa-solid fa-xmark hide"></i>
+					</div>
+					<ul id='mainMenu' class='menu-list hide-menu'>
+						<li>
+							<a>
+								Home
+							</a>
+						</li>
+
+						<li>
+							<a href="#a_text">
+								About
+							</a>
+						</li>
+						<li>
+							<a href="#text">
+								Skills
+							</a>
+						</li>
+						<li>
+							<a href="#p_text">
+								Portfolio
+							</a>
+						</li>
+						<li>
+							<a href="#g_text">
+								Contact
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="content-wrap header-text" id="hi_block">
+				<div id="greeting">
+					Hello, this is Anatoliy Bilogan
+				</div>
+				<div id="desc">
+						Student of the group KI-20-01
+				</div>
+				<div id="l_work">
+					<u>latest works</u>
+				</div>
+			</div>
+	</div>
+	<div class="content-wrap about">
+		<div><b>About</b></div>
+		<div id="a_text">
+			<p>I am a student of group KI-20-01. I am studying at the VSP "Professional College of Electronic Devices IFNTUNG"</p><br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+	<div class="skills">
+		<div class="content-wrap">
+			<div id="text"><b>Skills</b></div>
+			<img src="{% static 'bilogan/images/photo.png' %}" alt="">
+			<div class="progress-information">
+				<div>
+					<div class="inf">
+						<div class="block_1">
+							<b>Profile</b>
+						</div>
+						<div class="block_2">
+							UI / UX Engineer, Front-end Developer
+						</div>
+					</div>
+
+
+					<div class="inf">
+						<div class="block_1">
+							<b>Front-end Dev</b>
+						</div>
+						<div class="progress_bar">
+							<svg xmlns="http://www.w3.org/2000/svg" width="211" height="18" viewBox="0 0 211 18" fill="none">
+								<rect width="211" height="18" fill="#F5D6AB"/>
+								<rect width="135.305" height="18" fill="#C66C49"/>
+							</svg>
+						</div>
+					</div>
+					<div class="inf">
+						<div class="block_1">
+							<b>Tools</b>
+						</div>
+						<div class="block_2">
+							HTML, CSS, JS
+						</div>
+					</div>
+					<div class="inf">
+						<div class="block_1">
+							<b>UI Design</b>
+						</div>
+						<div class="progress_bar">
+							<svg xmlns="http://www.w3.org/2000/svg" width="210" height="18" viewBox="0 0 210 18" fill="none">
+								<rect width="210" height="18" fill="#F5D6AB"/>
+								<rect width="165.269" height="18" fill="#C66C49"/>
+							</svg>
+						</div>
+					</div>
+					<div class="inf">
+						<div class="block_1">
+							<b>Tools</b>
+						</div>
+						<div class="block_2">
+							Adobe PS, AI, XD, Figma
+						</div>
+					</div>
+
+
+
+					<div class="inf">
+						<div class="block_1">
+							<p><b>Program</b></p><p><b>ming</b></p>
+						</div>
+						<div class="progress_bar">
+							<svg xmlns="http://www.w3.org/2000/svg" width="210" height="18" viewBox="0 0 210 18" fill="none">
+								<rect width="210" height="18" fill="#F5D6AB"/>
+								<rect width="179.395" height="18" fill="#C66C49"/>
+							</svg>
+						</div>
+					</div>
+					<div class="inf">
+						<div class="block_1">
+							<b>Tools</b>
+						</div>
+						<div class="block_2">
+							Python, Java, Kotlin
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrap portfolio">
+			<div id="p_header">
+				<b>Portfolio</b>
+			</div>
+			<div id="p_name">
+				<b>Web task</b>
+			</div>
+			<div id="task">
+				<table>
+				  <tr>
+					<td> <a href="https://kapysto4ka.github.io/lr1.github.io/index1.html">Task 1</a></td>
+					<td><a href="https://kapysto4ka.github.io/lr1.github.io/index2.html">Task 2</a></td>
+				  </tr>
+				  <tr>
+					<td><a href="https://kapysto4ka.github.io/lr1.github.io/index3.html">Task 3</a></td>
+					<td><a href="https://kapysto4ka.github.io/lr1.github.io/index4.html">Task 4</a></td>
+				  </tr>
+					<tr>
+					<td><a href="https://kapysto4ka.github.io/lr1.github.io/index5.html">Task 5</a></td>
+					<td><a href="https://kapysto4ka.github.io/lr1.github.io/index6	.html">Task 6</a></td>
+				  </tr>
+						<tr>
+					<td><a href="https://kapysto4ka.github.io/lr1.github.io/index7.html">Task 7</a></td>
+				  </tr>
+				</table>
+			</div>
+		</div>
+	<div class="get_in_Touch">
+		<div class="content-wrap">
+			<div id="g_text">
+				<b>Get in Touch</b>
+			</div>
+			<div class="src">
+				<table>
+				  <tr>
+					<td> <a href="https://dribbble.com">Dribbble</a></td>
+					<td><a href="https://LinkedIn.com">LinkedIn</a></td>
+				  </tr>
+				  <tr>
+					<td><a href="https://Behance.com">Behance</a></td>
+					<td><a href="https://Facebook.com">Facebook</a></td>
+				  </tr>
+					<tr>
+					<td><a href="https://CodePen.com">CodePen</a></td>
+					<td><a href="https://Instagram.com">Instagram</a></td>
+				  </tr>
+					<tr>
+					<td><a href="https://github.com/Kapysto4ka">GitHub</a></td>
+					<td><a href="https://Twitter.com">Twitter</a></td>
+				  </tr>
+					</tr>
+					<tr>
+					<td><a href="https://Medium.com">Medium</a></td>
+				  </tr>
+				</table>
+				<div id="information">
+					<div id="email"><a href="mailto:seyrig@mailme.com">bilogan.anatolii@gmail.com</a></div>
+					<div id="phone"><a href="tel:55 6645 665544">+  066 06 255 86</a></div>
+				</div>
+				<div id="up">
+					<i class="fa-solid fa-chevron-up"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="{% static 'bilogan/script/script.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'group/main/style.css' %}">
+    <title>All Groups</title>
+</head>
+<body>
+
+<div id="info">Choose group</div>
+
+
+<form id="app-cover">
+  <div id="select-box">
+    <input type="checkbox" id="options-view-button">
+    <div id="select-button" class="brd">
+      <div id="selected-value">
+        <span>Choose group</span>
+      </div>
+      <div id="chevrons">
+        <i class="fas fa-chevron-up"></i>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+    <div id="options">
+      <div class="option">
+        <input class="s-c top" type="radio" name="platform" value="KI-20-01">
+        <input class="s-c bottom" type="radio" name="platform" value="KI-20-01">
+        <i class="fab fa-codepen"></i>
+        <span class="label">KI-20-01</span>
+        <span class="opt-val">Ki-20-01</span>
+      </div>
+      <div class="option">
+        <input class="s-c top" type="radio" name="platform" value="AK-20-01">
+        <input class="s-c bottom" type="radio" name="platform" value="AK-20-01">
+        <i class="fab fa-dribbble"></i>
+        <span class="label">AK-20-01</span>
+        <span class="opt-val">AK-20-01</span>
+      </div>
+      <div class="option">
+        <input class="s-c top" type="radio" name="platform" value="PI-21-02">
+        <input class="s-c bottom" type="radio" name="platform" value="PI-21-02">
+        <i class="fab fa-behance"></i>
+        <span class="label">PI-21-02</span>
+        <span class="opt-val">PI-21-02</span>
+      </div>
+      <div class="option">
+        <input class="s-c top" type="radio" name="platform" value="FB-23-01">
+        <input class="s-c bottom" type="radio" name="platform" value="FB-23-01">
+        <i class="fab fa-hackerrank"></i>
+        <span class="label">FB-23-01</span>
+        <span class="opt-val">FB-23-0</span>
+      </div>
+      <div id="option-bg"></div>
+    </div>
+  </div>
+</form>
+<script>
+  var radioButtons = document.querySelectorAll('input[name="platform"]');
+
+  radioButtons.forEach(function(radioButton) {
+    radioButton.addEventListener('change', function() {
+      if (this.checked) {
+        var group = this.value;
+        window.location.href = '/groups/' + group;
+      }
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"  href="{% static 'main/style.css' %}">
+    <title>All Students</title>
+  <style>
+    .logo {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        width: 200px;
+        height: auto;
+        z-index: 9999;
+    }
+</style>
+</head>
+<body>
+    <div id="background">
+  <div id="circle">
+    <div id="circle-glow"></div>
+    <div id="circle-inner"></div>
+  </div>
+</div>
+
+<div id="app">
+  <div id="nav">
+    <div id="nav-items">
+      <div class="nav-item">
+        <i class="fa-solid fa-house"></i>
+      </div>
+      <div class="nav-item">
+        <i class="fa-solid fa-comment"></i>
+      </div>
+      <div class="nav-item">
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+      <div class="nav-item">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <div class="nav-item">
+        <i class="fa-solid fa-image"></i>
+      </div>
+      <div class="nav-item">
+        <i class="fa-solid fa-chart-simple"></i>
+      </div>
+      <div class="nav-item">
+        <i class="fa-solid fa-dice"></i>
+      </div>
+    </div>
+  </div>
+<img class="logo" src="{% static 'main/fullLogo.svg' %}" alt="Логотип">
+  <div id="profiles">
+    <div class="profile" onclick="redirectToProfile('/students/bilogan')">
+    <div class="profile-content">
+        <div class="profile-pic">
+            <img class="profile-pic-image" src="{% static 'bilogan/images/photo.png' %}" />
+        </div>
+        <h3 class="profile-name">Anatoliy Bilogan</h3>
+    </div>
+    </div>
+    <div class="profile" onclick="redirectToProfile('/students/hrubuk')">
+      <div class="profile-content">
+        <div class="profile-pic">
+          <img class="profile-pic-image" src="{% static 'hrubuk/images/myphoto.jpg' %}" />
+        </div>
+        <h3 class="profile-name">Rostislav Hrubuk</h3>
+      </div>
+    </div>
+    <div class="profile" onclick="redirectToProfile('/students/babyak')">
+      <div class="profile-content">
+        <div class="profile-pic">
+          <img class="profile-pic-image" src="{% static 'babyak/images/skills-photo.png' %}" />
+        </div>
+        <h3 class="profile-name">Bohdan Babyak</h3>
+      </div>
+    </div>
+    <div class="profile" onclick="redirectToProfile('/students/ivanyuk')">
+      <div class="profile-content">
+        <div class="profile-pic">
+          <img class="profile-pic-image" src="{% static 'ivanyuk/photo2.jpg' %}" />
+        </div>
+        <h3 class="profile-name">Yuriy Ivanyuk</h3>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function redirectToProfile(url) {
+    window.location.href = url;
+}
+</script>
+</body>
+</html>

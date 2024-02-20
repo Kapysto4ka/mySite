@@ -1,0 +1,192 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="{% static 'babyak/styles.css' %}">
+	
+</head>
+<body>
+	<img src="" alt="">
+	<div class="header-block">
+		<div class="overlay"></div>
+		<header>
+			<div class="content-wrap d-flex">
+				<div class="logo">
+					Portofolio
+				</div>
+				<nav class='main-menu'>
+					<div id='iconWrap' class="icons">
+						<i id='iconOpen' class="fa-solid fa-bars"></i>
+						<i id='iconClose' class="fa-solid fa-xmark hide"></i>
+					</div>
+					<ul id='mainMenu' class='menu-list hide-menu'>
+						<li>
+							<a href="#" class="menu-button">
+								Home
+							</a>
+						</li>
+
+						<li>
+							<a href="#about" class="menu-button">
+								About
+							</a>
+						</li>
+						<li>
+							<a href="#skills" class="menu-button">
+								Skills
+							</a>
+						</li>
+						<li>
+							<a href="#portfolio" class="menu-button">
+								Portfolio
+							</a>
+						</li>
+						<li>
+							<a href="#contact" class="menu-button">
+								Contact
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+	</div>
+	<div class="text-block-main">
+		<p>Hi, It’s Bohdan Babiak</p>
+		<p>Coder from Vilshanytsia</p><br><br>
+		<a href="#portfolio">Latest works</a>
+	</div>
+	<div class="blur-element" id="blur-element"></div>
+	<div class="about-block" id="about">
+		<div class="title"><p>About</p></div>
+		<div class="text-block-about">
+			<p>Lorem ipsum dolor sit amet, Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis.</p><br>
+			<p>Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis. diam penatibus aliquet tellus, in rutrum augue. Pellentesque.</p><br><br><br>
+			<div class="skills-block" id="skills">
+				<div class="title"><p>Skills</p></div>
+				<div class="content-block-skills">
+					<div class="image-skills"></div>
+					<div class="text-block-skills">
+						<div class="names-of-skills">
+							<p>Profile</p>
+							<p>Front-end Dev</p>
+							<p>Tools</p>
+							<p>UI Design</p>
+							<p>Tools</p>
+							<p>UX Research</p>
+							<p>Tools</p>
+						</div>
+						<div class="skills-info">
+							<p>UI / UX Engineer, Front-end Developer</p>
+							<div class="progress-bar bar1"><div class="progress prog1"></div></div>
+							<p>HTML, CSS, JS, Bootstrap, React</p>
+							<div class="progress-bar bar2"><div class="progress prog2"></div></div>
+							<p>Adobe PS, AI, XD, Figma, InVision</p>
+							<div class="progress-bar bar3"><div class="progress prog3"></div></div>
+							<p>Paper, Pen, Balsamiq</p><br><br><br>
+							<div class="portfolio-block" id="portfolio">
+								<div class="title"><p>Portfolio</p></div>
+								<div class="content-block-skills">
+									<div class="text-block-portfolio">
+										<p>UX Research</p><br>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac dictum nibh nam odio cursus id. Diam massa semper a tincidunt cursus ultricies lectus eget urna.</p>
+									</div>
+									<div class="task-list">
+										<div class="labs">
+											<div class="dropdown">
+												<button class="dropbtn">Lab 1</button>
+												<div class="dropdown-content">
+													<a href="https://bohdanbabiak1.github.io/LR1/LR1/1/index.html" target="_blank">Task 1</a>
+													<a href="https://bohdanbabiak1.github.io/LR1/LR1/2/index.html" target="_blank">Task 2</a>
+													<a href="https://bohdanbabiak1.github.io/LR1/LR1/3/index.html" target="_blank">Task 3</a>
+													<a href="https://bohdanbabiak1.github.io/LR1/LR1/4/index.html" target="_blank">Task 4</a>
+													<a href="https://bohdanbabiak1.github.io/LR1/LR1/5/index.html" target="_blank">Task 5</a>
+													<a href="https://bohdanbabiak1.github.io/LR1/LR1/6/index.html" target="_blank">Task 6</a>
+													<a href="https://bohdanbabiak1.github.io/LR1/LR1/7/index.html" target="_blank">Task 7</a>
+													<a href="https://bohdanbabiak1.github.io/LR1/LR1/8/index.html" target="_blank">Task 8</a>
+												</div>
+											</div>
+											<div class="dropdown">
+												<button class="dropbtn">Lab 2</button>
+												<div class="dropdown-content">
+													<a href="https://bohdanbabiak1.github.io/LR2/LR2/index.html" target="_blank">Task 1</a>
+												</div>
+											</div>
+											<div class="dropdown">
+												<button class="dropbtn">Lab 3</button>
+												<div class="dropdown-content">
+													<a href="https://bohdanbabiak1.github.io/LR3/index.html" target="_blank">Task 1</a>
+												</div>
+											</div>
+										</div>
+										<div class="practs">
+											<div class="dropdown">
+												<button class="dropbtn">Prac 2</button>
+												<div class="dropdown-content">
+													<a href="https://bohdanbabiak1.github.io/PR2/1/index.html" target="_blank">Task 1</a>
+													<a href="https://bohdanbabiak1.github.io/PR2/2/index.html" target="_blank">Task 2</a>
+													<a href="https://bohdanbabiak1.github.io/PR2/3/index.html" target="_blank">Task 3</a>
+													<a href="https://bohdanbabiak1.github.io/PR2/4/index.html" target="_blank">Task 4</a>
+												</div>
+											</div>
+											<div class="dropdown">
+												<button class="dropbtn">Prac 3</button>
+												<div class="dropdown-content">
+													<a href="https://bohdanbabiak1.github.io/PR3/index.html" target="_blank">Task 1</a>
+												</div>
+											</div>
+											<div class="dropdown">
+												<button class="dropbtn">Prac 4</button>
+												<div class="dropdown-content">
+													<a href="https://bohdanbabiak1.github.io/PR4/PR4/" target="_blank">Task 1</a>
+												</div>
+											</div>
+											<div class="dropdown secondrow">
+												<button class="dropbtn">Prac 5</button>
+												<div class="dropdown-content">
+													<a href="https://bohdanbabiak1.github.io/PR5/" target="_blank">Task 1</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="footer-block" id="contact">
+										<div class="title"><p>Get in Touch</p></div>
+										<div class="content-block-footer">
+											<div class="sites">
+												<ul class="web-services">
+													<li><a href="https://dribbble.com/" target="_blank">Dribbble</a></li>
+													<li><a href="https://www.behance.net/" target="_blank">Behance</a></li>
+													<li><a href="https://codepen.io/" target="_blank">Codepen</a></li>
+													<li><a href="https://github.com/" target="_blank">Github</a></li>
+													<li><a href="https://medium.com/" target="_blank">Medium</a></li>
+												</ul>
+												<ul class="social-networks">
+													<li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+													<li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+													<li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+													<li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+												</ul>
+											</div>
+											<ul class="contact-information">
+												<li><a href="mailto:seyrig@mailme.com">seyrig@mailme.com</a></li>
+												<li><a href="tel:+556645665544">+ 55 6645 665544</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+	<script src='{% static "babyak/script/script.js" %}'></script>
+</body>
+</html>
