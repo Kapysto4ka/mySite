@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'groups',
-    "students"
+    'students',
+    'manager'
 ]
 
 MIDDLEWARE = [
@@ -122,10 +123,12 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'students', 'static'),
     os.path.join(BASE_DIR, 'groups', 'static'),
+    os.path.join(BASE_DIR, 'manager', 'static'),
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR,"assets")
-
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 

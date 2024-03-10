@@ -1,30 +1,16 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Group
 
 
+def groups(request,name):
+    group = Group.objects.filter(name=name).first()
+    if group is not None:
+        info = {'group': group}
+        return render(request, 'groups/index2.html', info)
+    else:
+        return HttpResponse(f"Group with name '{name}' not found")
 def index(request):
-    return render(request,'groups/index.html')
-def KI(request):
-    name = 'KI-20-01'
-    amount = '27'
-    curator = 'Ольга Білан'
-    return render(request,'groups/index2.html', {"name":name, "amount":amount, "curator": curator})
-
-def AK(request):
-    name = 'AK-20-01'
-    amount = '25'
-    curator = 'Василь Грималюк'
-    return render(request,'groups/index2.html', {"name":name, "amount":amount, "curator": curator})
-
-def PI(request):
-    name = 'PI-21-02'
-    amount = '29'
-    curator = 'Ольга Стражник'
-    return render(request,'groups/index2.html', {"name":name, "amount":amount, "curator": curator})
-
-def FB(request):
-    name = 'FB-23-01'
-    amount = '15'
-    curator = 'Ірина Вовк'
-    return render(request,'groups/index2.html', {"name":name, "amount":amount, "curator": curator})
+    groups = Group.objects.all()
+    return render(request, 'groups/index.html', {'groups': groups})

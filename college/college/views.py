@@ -13,6 +13,7 @@ def main_page(request):
   <ul>
     <li><a href="/groups">Navigate to groups</a></li>
     <li><a href="/students">Navigate to students</a></li>
+    <li><a href="/manager">Navigate to manager</a></li>
   </ul>
 </body>
 </html>''')

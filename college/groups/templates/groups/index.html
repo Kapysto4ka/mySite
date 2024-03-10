@@ -13,7 +13,6 @@
 
 <div id="info">Choose group</div>
 
-
 <form id="app-cover">
   <div id="select-box">
     <input type="checkbox" id="options-view-button">
@@ -27,40 +26,22 @@
       </div>
     </div>
     <div id="options">
+      {% for group in groups %}
       <div class="option">
-        <input class="s-c top" type="radio" name="platform" value="KI-20-01">
-        <input class="s-c bottom" type="radio" name="platform" value="KI-20-01">
+        <input class="s-c top" type="radio" name="platform" value="{{ group.name }}">
+        <input class="s-c bottom" type="radio" name="platform" value="{{ group.name }}">
         <i class="fab fa-codepen"></i>
-        <span class="label">KI-20-01</span>
-        <span class="opt-val">Ki-20-01</span>
+        <span class="label">{{ group.name }}</span>
+        <span class="opt-val">{{ group.name }}</span>
       </div>
-      <div class="option">
-        <input class="s-c top" type="radio" name="platform" value="AK-20-01">
-        <input class="s-c bottom" type="radio" name="platform" value="AK-20-01">
-        <i class="fab fa-dribbble"></i>
-        <span class="label">AK-20-01</span>
-        <span class="opt-val">AK-20-01</span>
-      </div>
-      <div class="option">
-        <input class="s-c top" type="radio" name="platform" value="PI-21-02">
-        <input class="s-c bottom" type="radio" name="platform" value="PI-21-02">
-        <i class="fab fa-behance"></i>
-        <span class="label">PI-21-02</span>
-        <span class="opt-val">PI-21-02</span>
-      </div>
-      <div class="option">
-        <input class="s-c top" type="radio" name="platform" value="FB-23-01">
-        <input class="s-c bottom" type="radio" name="platform" value="FB-23-01">
-        <i class="fab fa-hackerrank"></i>
-        <span class="label">FB-23-01</span>
-        <span class="opt-val">FB-23-0</span>
-      </div>
+      {% endfor %}
       <div id="option-bg"></div>
     </div>
   </div>
 </form>
+
 <script>
-  var radioButtons = document.querySelectorAll('input[name="platform"]');
+  const radioButtons = document.querySelectorAll('input[name="platform"]');
 
   radioButtons.forEach(function(radioButton) {
     radioButton.addEventListener('change', function() {
@@ -70,6 +51,7 @@
       }
     });
   });
+
 </script>
 </body>
 </html>

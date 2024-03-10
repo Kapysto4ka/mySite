@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'manager/style.css' %}">
+    <title>Title</title>
+</head>
+<body>
+    <div class="form">
+
+      <ul class="tab-group">
+        <li class="tab active"><a onclick="changePlaceholder(this)">New student</a></li>
+        <li class="tab"><a onclick="changePlaceholder(this)">New group</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="signup">
+          <h1>Management menu</h1>
+          <form action="{% url 'manager' %}" method="post" enctype="multipart/form-data">
+
+            {% csrf_token %}
+
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                <input type="hidden" name="action" id="action" value="student">
+              </label>
+              <input name="nameInput" id="nameInput" placeholder="Name" type="text" required autocomplete="off" />
+            </div>
+
+            <div class="field-wrap">
+              <input name="secondInput" id="secondInput" placeholder="Surname" type="text" required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <input name="input_3" id="input_3" placeholder="Group" type="text" required autocomplete="off"/>
+          </div>
+
+          <div class="field-wrap">
+            <input name="input_4" id="input_4" placeholder="Age" type="text" required autocomplete="off"/>
+          </div>
+
+          <div class="field-wrap">
+            <input name="input_5" id="input_5" placeholder="Average score" type="text" required autocomplete="off"/>
+          </div>
+
+            <div class="field-wrap">
+           <input id="input_6" type="file" name="fileToUpload" id="fileToUpload" accept="image/*" onchange="previewImage(event)">
+          </div>
+          <div class="field-wrap" id="image" style="display: flex; justify-content: center; align-items: center;">
+              <img id="preview" src="#" alt="Image preview" style="max-width: 100%; max-height: 100%; border: 5px solid black;">
+          </div>
+          <button type="submit" class="button button-block"/>Add</button>
+          </form>
+        </div>
+
+        <div id="login">
+        </div>
+
+      </div>
+ <script src="{% static '/manager/script.js' %}"></script>
+</div>
+ <script>
+    function previewImage(event) {
+    var file = event.target.files[0];
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+        var img = new Image();
+        img.src = e.target.result;
+
+        img.onload = function() {
+            var canvas = document.createElement('canvas');
+            var ctx = canvas.getContext('2d');
+
+            var MAX_WIDTH = 500;
+            var MAX_HEIGHT = 500;
+            var width = img.width;
+            var height = img.height;
+
+            if (width > height) {
+                if (width > MAX_WIDTH) {
+                    height *= MAX_WIDTH / width;
+                    width = MAX_WIDTH;
+                }
+            } else {
+                if (height > MAX_HEIGHT) {
+                    width *= MAX_HEIGHT / height;
+                    height = MAX_HEIGHT;
+                }
+            }
+
+            canvas.width = width;
+            canvas.height = height;
+            ctx.drawImage(img, 0, 0, width, height);
+
+            var dataurl = canvas.toDataURL('image/jpeg');
+            document.getElementById('preview').src = dataurl;
+            document.getElementById('preview').style.display = 'block';
+        };
+    };
+
+    reader.readAsDataURL(file);
+}
+
+ </script>
+</body>
+</html>

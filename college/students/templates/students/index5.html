@@ -7,6 +7,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet"  href="{% static 'main/style.css' %}">
+  <link rel="stylesheet"  href="{% static 'main/style2.css' %}">
     <title>All Students</title>
   <style>
     .logo {
@@ -54,6 +55,12 @@
     </div>
   </div>
 <img class="logo" src="{% static 'main/fullLogo.svg' %}" alt="Логотип">
+        <div class="container">
+  <div class="popup">
+      <a href="other" class="popup-button">Other students</a>
+  </div>
+</div>
+
   <div id="profiles">
     <div class="profile" onclick="redirectToProfile('/students/bilogan')">
     <div class="profile-content">
